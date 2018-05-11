@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.basmet.blooddoner.UI.LogInActivity"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_app"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_mail_black_24dp"
+        android:drawableStart="@drawable/ic_mail_black_24dp"
+        android:layout_marginBottom="10dp"
+        android:maxLines="1"
+        android:id="@+id/email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:layout_marginBottom="10dp"
+        android:maxLines="1"
+        android:id="@+id/password"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_text_height"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_login"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/log_in"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_text_height"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/sign_up"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@drawable/button_signup"
+        android:id="@+id/sign_up"/>
+</LinearLayout>
+</ScrollView>
